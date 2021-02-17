@@ -100,15 +100,3 @@ app.get('*', (req, res)=>{
 app.listen(3000, ()=>{
     console.log('Server is up on port 3000.')
 })
-
-// app.get('',(req, res)=>{
-//     res.send('<h1>Def Page<h1>')
-// })
-
-
-// app.get('/help', (req, res) =>{
-//     res.send({
-//         name : 'Yati',
-//         age : 21
-//     })
-// })
