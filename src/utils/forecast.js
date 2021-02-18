@@ -11,9 +11,9 @@ const forecast = (latitude, longitude, callback)=>{
         else{
             callback(undefined,{
                 forecast : "Current temperature is "+ body.main.temp + '°C.',
-                status : 'Sky status : ' +body.weather[0].main+''
-            }
-            )
+                status : 'Sky status : ' +body.weather[0].main+'',
+                min_max : 'Today it will be high upto '+ body.main.temp_max + ' with a low of '+ body.main.temp_min+''
+            })
         }
     })
 } 

@@ -77,6 +77,7 @@ app.get('/weather', (req, res)=>{
             res.send({
                 forecast : forecastdata.forecast,
                 status : forecastdata.status,
+                min_max : forecastdata.min_max,
                 location
             })
         })
